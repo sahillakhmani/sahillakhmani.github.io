@@ -2,18 +2,18 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Sahil Lakhmani
     - name: Date of Birth
-      value: 14th March 1879
+      value: 6th October 2003
     - name: Languages
-      value: English, German
+      value: English, Hindi, Sindhi
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Bachelor's
+      institution: Chennai Mathematical Institute
+      year: 2025 (expected)
       description:
         - Description 1.
         - Description 2.
@@ -21,9 +21,9 @@
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+    - title: High School Diploma
+      institution: Boys' High School and College, Prayagraj, India
+      year: 2020
       description:
         - Description 1.
         - Description 2.
