@@ -1,7 +1,7 @@
 ---
 layout: post
 title: STEMS 2024 is here!
-date: 2023-12-05 16:11:00-0400
+date: 2023-12-04 16:11:00-0400
 inline: false
 related_posts: false
 ---
