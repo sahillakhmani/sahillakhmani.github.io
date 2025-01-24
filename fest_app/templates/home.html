@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .admin-btn {
+            background-color: #FF6347; /* Red for admin */
+        }
+        .admin-btn:hover {
+            background-color: #E55347;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome, {{ current_user.username }}!</h1>
+    <p>Your current token balance is: {{ current_user.tokens }}</p>
+
+    <form action="{{ url_for('buy_tokens') }}" method="POST">
+        <label for="tokens">Enter tokens to buy:</label>
+        <input type="number" id="tokens" name="tokens" min="1" required>
+        <button class="btn" type="submit">Buy Tokens</button>
+    </form>
+
+    <br>
+
+    <a href="{{ url_for('check_balance') }}" class="btn">Check Token Balance</a>
+    
+    {% if admin %}
+        <br><br>
+        <a href="{{ url_for('admin_dashboard') }}" class="btn admin-btn">Admin Dashboard</a>
+    {% endif %}
+
+    <br><br>
+    <a href="{{ url_for('logout') }}" class="btn">Logout</a>
+
+</body>
+</html>
