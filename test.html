@@ -181,56 +181,52 @@
     <div id="result"></div>
 
     <script>
-        // Timer (1 hour = 3600 seconds)
-        let timeLeft = 3600;
-        const timer = document.getElementById("timer");
+    // Timer (1 hour = 3600 seconds)
+    const timer = document.getElementById("timer");
+    const startTime = localStorage.getItem('testStartTime');
+    const now = Math.floor(Date.now() / 1000);
+    let timeLeft = 3600;
 
-        function formatTime(seconds) {
-            const hrs = Math.floor(seconds / 3600);
-            const mins = Math.floor((seconds % 3600) / 60);
-            const secs = seconds % 60;
-            return `${hrs.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+    // Check if timer was already started
+    if (startTime) {
+        const elapsed = now - startTime;
+        timeLeft = Math.max(0, 3600 - elapsed); // Prevent negative time
+    } else {
+        // First time loading - set start time
+        localStorage.setItem('testStartTime', now);
+    }
+
+    function formatTime(seconds) {
+        const hrs = Math.floor(seconds / 3600);
+        const mins = Math.floor((seconds % 3600) / 60);
+        const secs = seconds % 60;
+        return `${hrs.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+    }
+
+    const countdown = setInterval(() => {
+        timeLeft--;
+        localStorage.setItem('timeLeft', timeLeft); // Persist remaining time
+        timer.textContent = `Time Remaining: ${formatTime(timeLeft)}`;
+        
+        if (timeLeft === 300) {
+            timer.classList.add("time-warning");
         }
-
-        const countdown = setInterval(() => {
-            timeLeft--;
-            timer.textContent = `Time Remaining: ${formatTime(timeLeft)}`;
-            
-            // Add warning when 5 minutes left
-            if (timeLeft === 300) {
-                timer.classList.add("time-warning");
-            }
-            
-            if (timeLeft <= 0) {
-                clearInterval(countdown);
-                timer.textContent = "Time's up!";
-                calculateScore(); // Auto-submit
-            }
-        }, 1000);
-
-        function calculateScore() {
-            const answers = {
-                q1: "C", q2: "A", q3: "A", q4: "A", q5: "D",
-                q6: "B", q7: "D", q8: "B", q9: "C", q10: "A"
-            };
-            let score = 0;
-            const totalQuestions = 10;
-
-            for (let i = 1; i <= totalQuestions; i++) {
-                const selected = document.querySelector(`input[name="q${i}"]:checked`);
-                if (selected && selected.value === answers[`q${i}`]) {
-                    score += 1;
-                }
-            }
-
-            const resultDiv = document.getElementById("result");
-            resultDiv.innerHTML = `Your score: ${score}/${totalQuestions} (${Math.round((score / totalQuestions) * 100)}%)`;
-            resultDiv.style.color = score >= 7 ? "green" : "red";
-            
-            // Disable further submissions
+        
+        if (timeLeft <= 0) {
             clearInterval(countdown);
-            document.querySelector("button").disabled = true;
+            timer.textContent = "Time's up!";
+            localStorage.removeItem('testStartTime'); // Clean up
+            localStorage.removeItem('timeLeft');
+            calculateScore();
         }
-    </script>
+    }, 1000);
+
+    // Clear storage when leaving the page (optional)
+    window.addEventListener('beforeunload', (e) => {
+        if (timeLeft > 0) return; // Only clear if test completed
+        localStorage.removeItem('testStartTime');
+        localStorage.removeItem('timeLeft');
+    });
+</script>
 </body>
 </html>
