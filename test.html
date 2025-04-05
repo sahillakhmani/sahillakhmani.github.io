@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMC 8/10 Combinatorics Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        #timer {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            margin: 10px 0;
+        }
+        .problem {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        #result {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .time-warning {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0% { color: #e74c3c; }
+            50% { color: #000; }
+            100% { color: #e74c3c; }
+        }
+    </style>
+</head>
+<body>
+    <h1>AMC 8/10 Combinatorics Practice Test</h1>
+    <div id="timer">Time Remaining: 01:00:00</div>
+    
+    <div id="quiz">
+        <!-- Problem 1 -->
+        <div class="problem">
+            <h3>Problem 1</h3>
+            <p>How many ways can you arrange the letters in the word "MATH"?</p>
+            <input type="radio" name="q1" value="A"> A) 6<br>
+            <input type="radio" name="q1" value="B"> B) 12<br>
+            <input type="radio" name="q1" value="C"> C) 24<br>
+            <input type="radio" name="q1" value="D"> D) 120<br>
+            <input type="radio" name="q1" value="E"> E) 720<br>
+        </div>
+
+        <!-- Problem 2 -->
+        <div class="problem">
+            <h3>Problem 2</h3>
+            <p>A pizza shop offers 4 toppings: mushrooms, olives, peppers, and onions. How many different 2-topping pizzas can be made?</p>
+            <input type="radio" name="q2" value="A"> A) 6<br>
+            <input type="radio" name="q2" value="B"> B) 8<br>
+            <input type="radio" name="q2" value="C"> C) 12<br>
+            <input type="radio" name="q2" value="D"> D) 16<br>
+            <input type="radio" name="q2" value="E"> E) 24<br>
+        </div>
+
+        <!-- Problem 3 -->
+        <div class="problem">
+            <h3>Problem 3</h3>
+            <p>How many 3-digit numbers have exactly two digits the same (like 121 or 991)?</p>
+            <input type="radio" name="q3" value="A"> A) 243<br>
+            <input type="radio" name="q3" value="B"> B) 270<br>
+            <input type="radio" name="q3" value="C"> C) 300<br>
+            <input type="radio" name="q3" value="D"> D) 324<br>
+            <input type="radio" name="q3" value="E"> E) 360<br>
+        </div>
+
+        <!-- Problem 4 -->
+        <div class="problem">
+            <h3>Problem 4</h3>
+            <p>In how many ways can 4 people sit around a circular table if rotations are not considered distinct?</p>
+            <input type="radio" name="q4" value="A"> A) 6<br>
+            <input type="radio" name="q4" value="B"> B) 12<br>
+            <input type="radio" name="q4" value="C"> C) 24<br>
+            <input type="radio" name="q4" value="D"> D) 120<br>
+            <input type="radio" name="q4" value="E"> E) 720<br>
+        </div>
+
+        <!-- Problem 5 -->
+        <div class="problem">
+            <h3>Problem 5</h3>
+            <p>A committee of 3 is to be chosen from 5 boys and 4 girls. How many ways can this be done if the committee must include at least one girl?</p>
+            <input type="radio" name="q5" value="A"> A) 30<br>
+            <input type="radio" name="q5" value="B"> B) 50<br>
+            <input type="radio" name="q5" value="C"> C) 60<br>
+            <input type="radio" name="q5" value="D"> D) 74<br>
+            <input type="radio" name="q5" value="E"> E) 84<br>
+        </div>
+
+        <!-- Problem 6 -->
+        <div class="problem">
+            <h3>Problem 6</h3>
+            <p>How many positive integers less than 1000 have digits that sum to 5?</p>
+            <input type="radio" name="q6" value="A"> A) 15<br>
+            <input type="radio" name="q6" value="B"> B) 21<br>
+            <input type="radio" name="q6" value="C"> C) 30<br>
+            <input type="radio" name="q6" value="D"> D) 35<br>
+            <input type="radio" name="q6" value="E"> E) 56<br>
+        </div>
+
+        <!-- Problem 7 -->
+        <div class="problem">
+            <h3>Problem 7</h3>
+            <p>A bag has 2 red marbles and 3 blue marbles. How many ways can you pick 2 marbles if at least one is red?</p>
+            <input type="radio" name="q7" value="A"> A) 3<br>
+            <input type="radio" name="q7" value="B"> B) 4<br>
+            <input type="radio" name="q7" value="C"> C) 6<br>
+            <input type="radio" name="q7" value="D"> D) 7<br>
+            <input type="radio" name="q7" value="E"> E) 10<br>
+        </div>
+
+        <!-- Problem 8 -->
+        <div class="problem">
+            <h3>Problem 8</h3>
+            <p>How many ways can you climb a 10-step staircase if you can take 1 or 2 steps at a time?</p>
+            <input type="radio" name="q8" value="A"> A) 55<br>
+            <input type="radio" name="q8" value="B"> B) 89<br>
+            <input type="radio" name="q8" value="C"> C) 100<br>
+            <input type="radio" name="q8" value="D"> D) 121<br>
+            <input type="radio" name="q8" value="E"> E) 144<br>
+        </div>
+
+        <!-- Problem 9 -->
+        <div class="problem">
+            <h3>Problem 9</h3>
+            <p>How many subsets of {1, 2, 3, 4, 5, 6} contain at least one odd number?</p>
+            <input type="radio" name="q9" value="A"> A) 32<br>
+            <input type="radio" name="q9" value="B"> B) 48<br>
+            <input type="radio" name="q9" value="C"> C) 56<br>
+            <input type="radio" name="q9" value="D"> D) 60<br>
+            <input type="radio" name="q9" value="E"> E) 64<br>
+        </div>
+
+        <!-- Problem 10 -->
+        <div class="problem">
+            <h3>Problem 10</h3>
+            <p>A palindrome is a number like 121 that reads the same backward. How many 4-digit palindromes are there?</p>
+            <input type="radio" name="q10" value="A"> A) 90<br>
+            <input type="radio" name="q10" value="B"> B) 100<br>
+            <input type="radio" name="q10" value="C"> C) 120<br>
+            <input type="radio" name="q10" value="D"> D) 150<br>
+            <input type="radio" name="q10" value="E"> E) 200<br>
+        </div>
+    </div>
+
+    <button onclick="calculateScore()">Submit Test</button>
+    <div id="result"></div>
+
+    <script>
+        // Timer (1 hour = 3600 seconds)
+        let timeLeft = 3600;
+        const timer = document.getElementById("timer");
+
+        function formatTime(seconds) {
+            const hrs = Math.floor(seconds / 3600);
+            const mins = Math.floor((seconds % 3600) / 60);
+            const secs = seconds % 60;
+            return `${hrs.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        const countdown = setInterval(() => {
+            timeLeft--;
+            timer.textContent = `Time Remaining: ${formatTime(timeLeft)}`;
+            
+            // Add warning when 5 minutes left
+            if (timeLeft === 300) {
+                timer.classList.add("time-warning");
+            }
+            
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                timer.textContent = "Time's up!";
+                calculateScore(); // Auto-submit
+            }
+        }, 1000);
+
+        function calculateScore() {
+            const answers = {
+                q1: "C", q2: "A", q3: "A", q4: "A", q5: "D",
+                q6: "B", q7: "D", q8: "B", q9: "C", q10: "A"
+            };
+            let score = 0;
+            const totalQuestions = 10;
+
+            for (let i = 1; i <= totalQuestions; i++) {
+                const selected = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selected && selected.value === answers[`q${i}`]) {
+                    score += 1;
+                }
+            }
+
+            const resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = `Your score: ${score}/${totalQuestions} (${Math.round((score / totalQuestions) * 100)}%)`;
+            resultDiv.style.color = score >= 7 ? "green" : "red";
+            
+            // Disable further submissions
+            clearInterval(countdown);
+            document.querySelector("button").disabled = true;
+        }
+    </script>
+</body>
+</html>
