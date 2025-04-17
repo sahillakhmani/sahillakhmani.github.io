@@ -9,7 +9,7 @@ profile:
   image: sahil.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>G-05</p>
+    <p>G-12</p>
     <p>Hostel, Chennai Mathematical Institute</p>
     <p>Chennai, Tamil Nadu</p>
 
@@ -19,8 +19,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a second-year Bachelor's student majoring in Mathematics and Computer Science at [Chennai Mathematical Institute](https://www.cmi.ac.in/). My current interests primarily include [Coding Theory](https://en.wikipedia.org/wiki/Coding_theory), [Complexity](https://en.wikipedia.org/wiki/Complexity_theory_and_organizations) and Algorithm Design. 
+I am a final-year Bachelor's student majoring in Mathematics and Computer Science at [Chennai Mathematical Institute](https://www.cmi.ac.in/). My current interests primarily include Mathematical Finance, Stochastic Calculus and Statistics. 
 
-I am a part-time Associate Faculty of Mathematics at [Cheenta](https://www.cheenta.com/) where I mentor students for Olympiads in Mathematics and Computer Science some of whom have made it to IMOTC and IOITC, respectively.
+I have worked on various projects including options pricing using stochastic calculus (including the Black-Scholes and Heston models), implied volatility pair trading strategies with z-score and Kalman filters, all with realistic trading constraints like time-to-expiry adjustments, holding periods, and market making. I am reading more on Portfolio Optimization, Risk Analysis and Signature based volatility modelling for exotic derivative pricing.
 
-Besides academia, I love to follow cricket and basketball. I also like playing chess, solving sudokus and scrolling through [my favourite subreddit](https://www.reddit.com/r/ElectroBOOM/) in my spare time. 
+I am currently a Quantitative Research intern at [alphatensor.ai](https://www.alphatensor.ai/) where my goal is to generate alphas using ANNs of various architectures.
