@@ -15,83 +15,75 @@
       institution: Chennai Mathematical Institute
       year: 2025 (expected)
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - Bachelor of Science in Mathematics and Computer Science
+        - Relevant coursework: Probability Theory, Time Series Analysis, Introduction to Mathematical Finance, Martingales, Advanced Algorithms
+        - title: Certifications and Schools Attended
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
+            - Qualified Regional Mathematics Olympiad (RMO) - 2019
+            - Winter School on Randomized Algorithms, IIT Delhi - December 2023
+            - Winter School on Theoretical Computer Science, IISc Bengaluru - December 2025
+            - StatFin 2025 Conference at CMI - December 2025
     - title: High School Diploma
       institution: Boys' High School and College, Prayagraj, India
       year: 2020
       description:
-        - Description 1.
-        - Description 2.
+        - Completed senior secondary education with a focus on mathematics and science.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Teaching Assistant – Algorithm Design Techniques
+      institution: Chennai Mathematical Institute
+      year: Jan 2025 – Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Guided Data Science students in data structures and algorithms.
+        - Conducted tutorial sessions and assisted with problem-solving.
+        - Designed an auto-grading pipeline for course assessments.
+    - title: Teaching Assistant – Advanced Programming in Python
+      institution: Chennai Mathematical Institute
+      year: Jan 2025 – Present
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+        - Tutored first-year undergrads in Python and algorithmic concepts.
+        - Conducted problem-solving tutorials.
+        - Graded assignments and quizzes.
 
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/sahillakhmani/Option-Pricing">Option Pricing Using Stochastic Calculus</a>
+      year: Jan 2025 – Mar 2025
+      description: Implementation of Black-Scholes, Monte Carlo simulations, and the Heston model for pricing options and computing Greeks.
+    - title: <a href="https://github.com/sahillakhmani/Time-Series-ICICI-bank">ICICI Bank Stock Price Prediction</a>
+      year: Nov 2024 – Dec 2024
+      description: Used Exponential Smoothing and SARIMA for time series forecasting and achieved significant MAE reduction.
+    - title: <a href="https://github.com/sahillakhmani/Currency_Project_Tessellate">Currency and Market Creation for College Fest</a>
+      year: Jan 2025
+      description: Built a virtual currency and market-making system using LMSR and PostgreSQL for college fest betting.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+    - year: 2019
+      items:
+        - Qualified Regional Mathematics Olympiad (RMO)
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Mathematical Finance
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Option pricing using stochastic calculus
+        - Risk-neutral pricing and Greeks computation
+    - title: Probability and Stochastic Processes
       items:
-        - Description 1.
-        - Description 2.
+        - Martingales, volatility modeling
+        - Time series forecasting
+    - title: Algorithms and Complexity Theory
+      items:
+        - Approximation algorithms
+        - Extremal graph theory
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Basketball, Handball, Swimming, Mentoring
