@@ -32,6 +32,13 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Quant Research Intern
+      institution: Alpha Tensor (alphatensor.ai)
+      year: 2025 – Present
+      description:
+        - Working on blending artificial neural networks (ANNs) with statistical models.
+        - Designing alpha-generating strategies that leverage both deep learning and traditional quantitative techniques.
+        - Experimenting with hybrid models for signal generation and backtesting on financial data.
     - title: Teaching Assistant – Algorithm Design Techniques
       institution: Chennai Mathematical Institute
       year: Spring, 2025
