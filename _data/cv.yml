@@ -34,14 +34,14 @@
   contents:
     - title: Teaching Assistant – Algorithm Design Techniques
       institution: Chennai Mathematical Institute
-      year: Jan 2025 – Present
+      year: Spring, 2025
       description:
         - Guided Data Science students in data structures and algorithms.
         - Conducted tutorial sessions and assisted with problem-solving.
         - Designed an auto-grading pipeline for course assessments.
     - title: Teaching Assistant – Advanced Programming in Python
       institution: Chennai Mathematical Institute
-      year: Jan 2025 – Present
+      year: Spring, 2025
       description:
         - Tutored first-year undergrads in Python and algorithmic concepts.
         - Conducted problem-solving tutorials.
@@ -51,10 +51,10 @@
   type: time_table
   contents:
     - title: <a href="https://github.com/sahillakhmani/Option-Pricing">Option Pricing Using Stochastic Calculus</a>
-      year: Jan 2025 – Mar 2025
+      year: Jan 2025
       description: Implementation of Black-Scholes, Monte Carlo simulations, and the Heston model for pricing options and computing Greeks.
     - title: <a href="https://github.com/sahillakhmani/Time-Series-ICICI-bank">ICICI Bank Stock Price Prediction</a>
-      year: Nov 2024 – Dec 2024
+      year: Nov 2024
       description: Used Exponential Smoothing and SARIMA for time series forecasting and achieved significant MAE reduction.
     - title: <a href="https://github.com/sahillakhmani/Currency_Project_Tessellate">Currency and Market Creation for College Fest</a>
       year: Jan 2025
